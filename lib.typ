@@ -1,4 +1,4 @@
-#import "@preview/ctheorems:1.1.2": *
+#import "@preview/ctheorems:1.1.3": *
 
 // 文本和代码的字体
 #let songti = "SimSun"
@@ -286,7 +286,7 @@
   set page(
     paper: "a4",
     margin: (top: 2.5cm, bottom: 2.5cm, left: 2.5cm, right: 2.5cm),
-    footer: align(center)[#text(counter(page).display("1"), font: songti, size: 12pt)]
+    footer: align(center)[#context(counter(page).display("1"))]
   )
 
   // 摘要
@@ -324,7 +324,7 @@
     fill: (_, row) => if row == 0 or row == 1 {luma(200)} else {none},
     rows: 3,
     columns: 1fr,
-    text[*附录 #appendix-num.display()：*],
+    text[*附录 #context appendix-num.display()：*],
     text[*#title*],
     body
   )

@@ -42,6 +42,12 @@ Typst 将会创建一个新的目录，其中包含了所有你开始**除字体
 
 ## 更改记录
 
+2025-06-01（PR from [Capt-Lappland](https://github.com/Capt-Lappland)）
+
+- 更新到 Typst 0.13
+- 更新 Typst 包
+    - ctheorems: 1.1.2 ——> 1.1.3
+
 2024-08-20
 
 - 更改附录页代码框样式
