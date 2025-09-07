@@ -1,4 +1,4 @@
-#import "../lib.typ": *
+#import "lib.typ": *
 #show: thmrules
 
 #show: cumcm.with(
@@ -21,7 +21,7 @@
 
     本模板文件由主要以下六部分组成：
 
-    #list(indent:4em, 
+    #list(indent:4em,
       [main.typ 主文件],
       [template.typ 文档格式控制，包括一些基础的设置、函数],
       [refs.bib 参考文献],
@@ -143,12 +143,12 @@ cover-display: false, // 是否显示封面与编号页
     stroke: none,
     table.hline(),
     table.header(
-      table.cell(rowspan: 2, [*Names*]), 
+      table.cell(rowspan: 2, [*Names*]),
       table.cell(colspan: 2,[*Properties*],),
       table.hline(stroke: 0.6pt),
       table.cell(rowspan: 2, [*Creators*]),
       [*Type*], [*Size*],
-      
+
     ),
     table.hline(stroke: 0.4pt),
     [Machine], [Steel], [5 $"cm"^3$], [John p& Kate],
@@ -170,12 +170,12 @@ cover-display: false, // 是否显示封面与编号页
     stroke: none,
     table.hline(),
     table.header(
-      table.cell(rowspan: 2, [*Names*]), 
+      table.cell(rowspan: 2, [*Names*]),
       table.cell(colspan: 2,[*Properties*],),
       table.hline(stroke: 0.6pt),
       table.cell(rowspan: 2, [*Creators*]),
       [*Type*], [*Size*],
-      
+
     ),
     table.hline(stroke: 0.4pt),
     [Machine], [Steel], [5 $"cm"^3$], [John p& Kate],
@@ -213,7 +213,7 @@ $ A = mat(
 分段函数可以使用 `case` 环境：
 $ f\(x\)= cases(
   0 #h(1em) x text("为无理数,") ,
-  1 #h(1em) x text("为有理数.") 
+  1 #h(1em) x text("为有理数.")
 ) $
 假如要公式里面有个别文字，需要把这部分放在 text 环境里面,即 `text[文本内容]` 。
 
